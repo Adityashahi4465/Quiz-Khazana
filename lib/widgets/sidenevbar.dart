@@ -66,7 +66,8 @@ class SideNev extends StatelessWidget {
                             Text(
                               "Rs.$money",
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                                  TextStyle(color: Colors.white, fontSize: 15,
+                              ),
                             ),
                           ],
                         )
@@ -149,11 +150,11 @@ class SideNev extends StatelessWidget {
     final hovercoor = Colors.white60;
 
     return ListTile(
-      leading: Icon(icon, color: color),
+      leading: Icon(icon, color: color,),
       hoverColor: color,
       title: Text(
         label,
-        style: TextStyle(color: color),
+        style: TextStyle(color: color,),
       ),
       onTap: () async {
         await signOut();
